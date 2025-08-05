@@ -4,16 +4,10 @@ Eternal Terminal is a remote shell that automatically reconnects without interru
 
 Website: <https://mistertea.github.io/EternalTerminal/>.
 
-## Integration tests
-
-Circle: [![CircleCI](https://circleci.com/gh/MisterTea/EternalTerminal/tree/master.svg?style=svg)](https://circleci.com/gh/MisterTea/EternalTerminal/tree/master)
-
-Linux: ![Linux CI](https://github.com/MisterTea/EternalTerminal/workflows/Linux%20CI/badge.svg?branch=master)
-
 ## Packaging status
 
 [![Packaging
-status](https://repology.org/badge/vertical-allrepos/eternalterminal.svg)](https://repology.org/project/eternalterminal/versions)
+status](https://repology.org/badge/vertical-allrepos/eternalterminal.svg?exclude_unsupported=1)](https://repology.org/project/eternalterminal/versions)
 
 ## Installing
 
@@ -303,7 +297,7 @@ Alternatively, open the file /etc/systemd/system/et.service in an editor and cor
 
 
 ```
-ExecStart=/usr/local/bin/etserver --cfgfile=/etc/et.cfg
+ExecStart=/usr/local/bin/etserver --cfgfile=/etc/et.cfg --logtostdout
 ```
 
 Reload systemd configs:
